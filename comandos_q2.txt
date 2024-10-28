@@ -1,0 +1,20 @@
+-- Busca os dados do pistão
+SELECT * FROM estoque WHERE nome = 'Pistao';
+
+-- Calcula a média aritmética da quantidade de todas as colunas armazenadas na tabela
+SELECT AVG(quantidade) FROM estoque;
+
+-- Retorna a contagem de colunas armazenadas na tabela
+SELECT COUNT(*) FROM estoque;
+
+-- Busca a maior e a menor quantidade de peças
+SELECT MAX(quantidade) AS "maior quantidade", MIN(quantidade) AS "menor quantidade" FROM estoque;
+
+-- Retorna os atributos nome, carro e quantidade onde a estante seja igual a 3
+SELECT nome, ocarro AS carro, quantidade FROM estoque WHERE estante = 3;
+
+-- Retorna a média aritmética da quantidade onde o nível seja igual a 1
+SELECT AVG(quantidade) FROM estoque WHERE nível = 1;
+
+-- Retorna todos os atributos onde a estante seja menor que 3 e o nível seja maior que 4
+SELECT * FROM estoque WHERE estante < 3 AND nível > 4;

@@ -1,0 +1,5 @@
+-- Inserção da peça "Pistao"
+INSERT INTO estoque (oid, nome, ocarro, estante, nível, quantidade) VALUES ('5o', 'Pistao', 'Mustang', 4, 1, 167);
+
+-- Inserção da peça "Suspencao"
+INSERT INTO estoque (oid, nome, ocarro, estante, nível, quantidade) VALUES ('4o', 'Suspencao', 'Argo', 1, 1, 3500);
